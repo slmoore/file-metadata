@@ -1,8 +1,8 @@
 'use strict';
 
 var express = require('express');
-var multer = require('multer');
 var routes = require('./app/routes/index.js');
+var multer = require('multer');
 //var mongoose = require('mongoose');
 //var passport = require('passport');
 //var session = require('express-session');

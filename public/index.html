@@ -12,20 +12,25 @@
 	<body>
 
 	<div class="container">
+		<h1>File Metadata Microservice</h1>
+
+		<h4>User Stories</h4>
+		<ol>
+		    <li>I can submit a FormData object that includes a file upload.</li>
+		    <li>When I submit something, I will receive the file size in bytes within the JSON response</li>
+		</ol>
 		
-		<form>
-			<input type="text" name=""/>
-			<input type="submit" value="Submit"/>
+		<form id="fileForm" name="uploadForm" enctype="multipart/form-data" class="center-block text-center">
+			<input name="fileField" type="file" id="fileFieldId">
+			<input type="submit" value="Upload" class="btn btn-primary">
 		</form>
 		
+		<h3>Submitted file size:&nbsp;<span id="sizeView"></span></h3>
+		
 	</div>
-	
-	
-		<!--
+
 		<script type="text/javascript" src="common/ajax-functions.js"></script>
-		<script type="text/javascript" src="controllers/clickController.client.js"></script>
-		<script type="text/javascript" src="controllers/userController.client.js"></script>
-		-->
+		<script type="text/javascript" src="controllers/uploadController.client.js"></script>
 	</body>
 
 </html>
