@@ -10,7 +10,10 @@
    //callback from server
    function updateFileSize (data) {
       var file = JSON.parse(data);
-      sizeView.innerHTML = file.size + " bytes";
+      if (file.error)
+         alert("File too large (2MB Limit), please try again with a smaller file.");
+      else
+         sizeView.innerHTML = file.size + " bytes";
    }
 
    //Create FormData object to pass data to AJAX send()
